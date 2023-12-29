@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+}
+
+/* Màu đèn giao thông */
+#green{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    
+}
+
+#yellow{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+
+#red{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+/* The end Màu đèn giao thông */
+
+#a1{
+    border-radius: 15px;
+    width: 110px;
+}
+
+#a1 :hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+/* xăng xe 1 */
+#xang1{
+    width: 148px;
+    height: 10px;
+}
+
+.boder1{
+    width: 150px;
+    height: 20px;
+    border: 2px solid black;  
+    margin-left: 10px;
+}
+
+/* xăng xe 2 */
+#xang2{
+    width: 148px;
+    height: 10px;
+}
+
+.boder2{
+    width: 150px;
+    height: 20px;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+/* tên xăng xe 1 và 2 */
+p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* image đường đi */
+.way img{
+    margin: 10px;
+    width: 1500px;
+    height: 350px;
+}
+
+.destination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(3400%, -36%);
+    width: 20px;
+    height: 350px;
+    background-color: red;
+    margin-top: -19px;
+}
+
+.car-1 img{
+    width: 300px;
+    height: 135px;
+    margin-top: -580px;
+    margin-left: 20px;
+}
+
+.car-2 img{
+    width: 257px;
+    height: 115px;
+    margin-top: -300px;
+    margin-left: 42px;
+}
+
+/* rung động image xe */
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-1px); }
+    50% { transform: translateY(1px); }
+    75% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+}
+
+.car-1, .car-2 {
+    animation: shake 0.5s infinite;
+}
+
+#againstart button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
